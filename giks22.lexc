@@ -1,0 +1,338 @@
+!!!Multichar_Symbols +Noun +Verb +Adj +Sg +Pl Pre+ Suff+ Fut+ Pres+ Past+ Obj+ Sub+ Neg+!!!
+Multichar_Symbols [N] [V] [ADJ] [SG] [PL] [PRE] [SUFF] [FUT] [PRES] [PAST] [OBJ] [SUB] [NEG]
+
+LEXICON Root
+
+Noun;
+Verb;
+Adjective;
+Pronoun;
+ 
+
+
+LEXICON Noun
+NounrootC1;
+NounrootC2;
+NounrootC3a;
+NounrootC3b;
+NounrootC3c;
+PfNoun;
+
+
+LEXICON PfNoun
+[N]MU-A[SG] : mu^ NounrootC1;
+[N]MU-A[PL]  : a^ NounrootC1;
+[N]MU-MI[SG] : mu^ NounrootC2;
+[N]MU-MI[PL] : mi^ NounrootC2;
+[N]KI-I[SG] : ki^ NounrootC3a;
+[N]KI-I[PL] : i^ NounrootC3a;
+[N]GI-I[SG] : gi^ NounrootC3b;
+[N]GI-I[PL] : i^ NounrootC3b;
+[N]KI-CI[SG] : ki^ NounrootC3c;
+[N]KI-CI[PL] : ci^ NounrootC3c;
+
+
+
+LEXICON NounrootC1
+ndu #;
+tumia #;
+iritu #;
+gendi #;
+rutani #;
+
+LEXICON NounrootC2
+ti #;
+kwa #;
+ruthi #;
+gunda #;
+
+LEXICON NounrootC3a
+ndu #;
+rima #;
+ratu #;
+
+LEXICON NounrootC3b
+ti #;
+
+LEXICON NounrootC3c
+kiondo #;
+
+
+LEXICON Verb
+SubPrefVerb; !!!Subject Prefix!!!
+TenseVerb; !!!Tense Prefix!!!
+ObjPrefVerb; !!!Object Prefix!!!
+Verbroot; 
+SuffVerb; !!!Verb Suffix!!!
+
+
+LEXICON SubPrefVerb
+SubPrefVerbC1;
+SubPrefVerbC2;
+SubPrefVerbC3a;
+SubPrefVerbC3b;
+
+LEXICON SubPrefVerbC1
+[V][SUB][1P][SG] : n^ PresTense1; !!!change to TenseVerb!!!
+[V][SUB][1P][PL] : tu^ PresTense1;
+[V][SUB][2P][SG] : u^ PresTense1;
+[V][SUB][2P][PL] : mu^ PresTense1;
+[V][SUB][3P][SG] : a^ PresTense1;
+[V][SUB][3P][PL] : ma^ PresTense1;
+
+
+LEXICON SubPrefVerbC2
+[V][SUB][SG] : u^ PresTense1;
+[V][SUB][PL] : i^ PresTense1;
+
+
+LEXICON SubPrefVerbC3a
+[V][SUB][SG] : ki^ PresTense1;
+[V][SUB][PL] : ci^ PresTense1;
+
+LEXICON SubPrefVerbC3b
+[V][SUB][SG] : gi^ PresTense1; !!!Best create SubPrefVerbC3b!!!
+[V][SUB][PL] : i^ PresTense1;
+!!![SUB][PL] : i^ TenseVerb;!!!
+
+LEXICON TenseVerb
+PresTense;
+PastTense;
+FutTense;
+
+LEXICON PresTense
+PresTense1; !!!right now!!!
+PresTenseNeg;
+!!!PresTense2;  Gives an idea of intention - PRES+V+ :gu^ | ku^ Verbroot!!!
+
+LEXICON PresTenseNeg
+[V][PRES][1P][SG][NEG] : ndi^ PresTense1;
+[V][PRES][1P][PL][NEG] : tuti^ PresTense1;
+[V][PRES][2P][SG][NEG] : ndu^ PresTense1;
+[V][PRES][2P][PL][NEG] : muti^ PresTense1;
+[V][PRES][3P][SG][NEG] : nda^ PresTense1;
+[V][PRES][3P][PL][NEG] : mati^ PresTense1;
+
+
+
+LEXICON PresTense1
+[V][PRES] : ra^ Verbroot;
+!!![PRES] : ra^ ObjPrefix;!!!
+
+
+
+LEXICON PastTense
+PastTense1; !!!earlier than yesterday!!!
+PastTense2; !!!yesterday!!!
+PastTense3; !!!earlier today!!!
+PastTense4; !!!just now(immediate)!!!
+PastTenseNeg1;
+PastTenseNeg2;
+
+LEXICON PastTense1
+[V][PAST] : a^ Verbroot^ SuffVerb1;
+
+
+LEXICON PastTense2
+!!!PAST+V+ : ra^ Verbroot;!!!
+[V][PAST] : ra^ Verbroot^ SuffVerb1;
+
+
+LEXICON PastTense3
+[V][PAST] : 0^ Verbroot^ SuffVerb2;
+
+
+LEXICON PastTense4
+[V][PAST] : a^ Verbroot;
+
+
+LEXICON PastTenseNeg1
+!!![PAST][NEG] : +na^ Verbroot;!!!
+!!![PAST][NEG] : +a^ Verbroot; - Possible error !!!
+[V][PAST][1P][SG][NEG] : ndi^ PastTense2;
+[V][PAST][1P][PL][NEG] : tuti^ PastTense2;
+[V][PAST][2P][SG][NEG] : ndu^ PastTense2;
+[V][PAST][2P][PL][NEG] : muti^ PastTense2;
+[V][PAST][3P][SG][NEG] : nda^ PastTense2;
+[V][PAST][3P][PL][NEG] : mati^ PastTense2;
+
+LEXICON PastTenseNeg2
+[V][PAST][1P][SG][NEG] : ndi^ PastTense4;
+[V][PAST][1P][PL][NEG] : tuti^ PastTense4;
+[V][PAST][2P][SG][NEG] : ndu^ PastTense4;
+[V][PAST][2P][PL][NEG] : muti^ PastTense4;
+[V][PAST][3P][SG][NEG] : nda^ PastTense4;
+[V][PAST][3P][PL][NEG] : mati^ PastTense4;
+
+LEXICON FutTense
+FutTense1a; !!! (gu) very soon today(immediate)!!!
+FutTense1b; !!! (ku) very soon today(immediate)!!!
+FutTense2; !!!later today or soon after today(intermediate)!!!
+FutTense3a; !!! (ga) after today(distant)!!!
+FutTense3b; !!! (ka) after today(distant)!!!
+
+
+LEXICON FutTense1a
+[V][FUT]: gu^ Verbroot;
+
+LEXICON FutTense1b
+[V][FUT] : ku^ Verbroot;
+
+
+LEXICON FutTense2
+[V][FUT] : ri^ Verbroot;
+
+
+LEXICON FutTense3a
+[V][FUT] : ga^ Verbroot;
+
+LEXICON FutTense3b
+[V][FUT] : ka^ Verbroot;
+
+
+LEXICON ObjPrefVerb
+ObjPrefixC1;
+ObjPrefixC2;
+ObjPrefixC3;
+
+LEXICON ObjPrefixC1
+
+[V][1P][OBJ][SG] : ni^ Verbroot;
+[V][1P][OBJ][PL] : tu^ Verbroot;
+[V][2P][OBJ][SG] : ku^ Verbroot;
+[V][2P][OBJ][PL] : mu^ Verbroot;
+[V][3P][OBJ][SG] : mu^ Verbroot;
+[V][3P][OBJ][PL] : ma^ Verbroot;
+
+
+
+LEXICON ObjPrefixC2
+[V][OBJ][SG] : u^ Verbroot;
+[V][OBJ][PL] : mi^ Verbroot;
+
+
+LEXICON ObjPrefixC3
+[V][OBJ][SG] : ki^ Verbroot;
+[V][OBJ][PL] : ci^ Verbroot;
+
+
+LEXICON Verbroot
+thaambi^ SuffVerb;
+igu^ SuffVerb;
+gwati^ SuffVerb;
+hot^ SuffVerb;
+uri^ SuffVerb;
+uk^ SuffVerb;
+coki^ SuffVerb;
+rugam^ SuffVerb;
+rug^ SuffVerb;
+rim^ SuffVerb;
+um^ SuffVerb;
+ukir^ SuffVerb;
+twar^ SuffVerb;
+geithi^ SuffVerb;
+tig^ SuffVerb;
+nyit^ SuffVerb;
+kiny^ SuffVerb;
+ug^ SuffVerb;
+rehe^ SuffVerb;
+hoy^ SuffVerb;
+rum^ SuffVerb;
+teithi^ SuffVerb;
+hituk^ SuffVerb;
+kaani^ SuffVerb;
+thak^ SuffVerb;
+amukir^ SuffVerb;
+itiki^ SuffVerb;
+hur^ SuffVerb;
+rir^ SuffVerb;
+cemani^ SuffVerb;
+
+LEXICON SuffVerb
+SuffVerb1; !!!Past tense ire!!!
+SuffVerb2; !!!Present and Future tense a!!!
+0 #;
+
+LEXICON SuffVerb1
+[V][SUFF]: ire #;
+
+
+LEXICON SuffVerb2
+[V][SUFF]: a #;
+
+
+LEXICON Adjective
+Adjectiveroot;
+PrefAdjective1;
+PrefAdjective2;
+NumAdjective1;
+NumAdjective2;
+
+LEXICON PrefAdjective1
+[ADJ]MU-A[SG] : mu^ Adjectiveroot;
+[ADJ]MU-A[PL] : a^ Adjectiveroot;
+[ADJ]MU-MI[SG] : mu^ Adjectiveroot;
+[ADJ]MU-MI[PL] : mi^ Adjectiveroot;
+[ADJ]KI-CI[SG] : ki^ Adjectiveroot;
+[ADJ]KI-CI[PL] : ci^ Adjectiveroot;
+
+LEXICON PrefAdjective2
+[ADJ]MU-A[SG] : mu^ NumAdjective1;
+[ADJ]MU-A[PL] : a^ NumAdjective1;
+[ADJ]MU-MI[SG] : mu^ NumAdjective1;
+[ADJ]MU-MI[PL] : mi^ NumAdjective1;
+[ADJ]KI-CI[SG] : ki^ NumAdjective1;
+[ADJ]KI-CI[PL] : ci^ NumAdjective1;
+
+LEXICON NumAdjective1
+mwe #;
+iri #;
+tatu #;
+nya #;
+tano #;
+tandatu #;
+mugwanja #;
+nyanya #;
+
+
+LEXICON NumAdjective2
+mugwanja #;
+kenda #;
+ikumi #;
+
+LEXICON Adjectiveroot
+ega #;
+nene #;
+theru #;
+geni #;
+eru #;
+uru #;
+nini #;
+ka #;
+rume #;
+ingi #;
+gima #;
+thaka #;
+hiu #;
+horo #;
+tungu #;
+oru #;
+kuru #;
+
+LEXICON Pronoun
+PersPronoun;
+
+LEXICON PersPronoun
+nii #;
+wee #;
+we #;
+ithui #;
+inyui #;
+o #;
+
+
+
+
+
+
+

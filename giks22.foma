@@ -1,0 +1,15 @@
+###giks22.foma###
+
+
+read lexc giks22.lexc
+define Lexicon;
+
+#Cleanup: remove morpheme boundaries
+define Cleanup "^" -> 0;
+
+read lexc giks22.lexc
+define Lexicon
+
+define Grammar Lexicon .o. Cleanup;
+
+regex Grammar;
